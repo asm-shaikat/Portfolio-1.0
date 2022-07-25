@@ -1,0 +1,11 @@
+.child-2{
+    display: none;
+}
+.child-1:hover + .child-2{
+    display: block;
+}
+@media (max-width: 768px){
+    .child p{
+        font-size:xx-small;
+    }
+}
