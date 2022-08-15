@@ -10,7 +10,7 @@ const Skills = () => {
                 <div className="text-center skill-title border-2 border-purple-800 w-4/5 rounded-md ml-10 mb-5 mt-5 lg:ml-28">
                     <p>SKILLS</p>
                 </div>
-            <div className="skill-section ml-10 lg:flex lg:ml-96">
+            <div className="skill-section ml-8 lg:flex lg:ml-96">
                 <div className="fend-bend flex mt-10 space-x-6">
                     <div className="fend skill-container">
                         <Fade left>

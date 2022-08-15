@@ -7,7 +7,7 @@ const Home = () => {
         <div>
           <Navbar></Navbar>
             <header className='xl:ml-64'>
-                <div className='ml-20'>
+                <div className='ml-16'>
                     <img className='h-60 w-72 ml-30 xl:h-80 xl:w-80 xl:ml-80'
                         src="images/lets-code.gif" alt="" />
                 </div> 
@@ -29,7 +29,7 @@ const Home = () => {
             </header>
 
             {/* Myself */}
-            <div className="myself w-full mt-20">
+            <div className="myself w-full mt-20 mb-8">
                 <p className='text-center font-sans text-3xl font-extrabold tracking-[.25em]'>
                 Myself</p>
                 <div className='xl:flex xl:w-full xl:-ml-20'>

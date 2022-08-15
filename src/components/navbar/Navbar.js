@@ -15,6 +15,7 @@ const Navbar = () => {
         <div>
             <div id="mySidebar" className="sidebar">
                 <Link to="/" className="closebtn" onClick={closeNav}>×</Link>
+                <Link to="/">Home</Link>
                 <Link to="/projects" >Project</Link>
                 <Link to="/skills">Skills</Link>
                 <Link to="/about">About</Link>

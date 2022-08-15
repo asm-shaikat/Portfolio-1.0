@@ -8,4 +8,7 @@
     .child p{
         font-size:xx-small;
     }
+    .child-1:hover + .child-2{
+        display: none;
+    }
 }

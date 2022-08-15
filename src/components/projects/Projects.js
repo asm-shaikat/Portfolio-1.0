@@ -3,12 +3,12 @@ import Navbar from '../navbar/Navbar';
 import projectdata from '../data/projectdata';
 import Projectcontiainer from './Projectcontiainer';
 import Catagory from '../catagory/Catagory';
-const allcatagory = ['all',...new Set(projectdata.map((dta) => dta.type))];
+const allcatagory = ['All',...new Set(projectdata.map((dta) => dta.type))];
 const Projects = () => {
     const [projectdetails,setprojectdetails] = useState(projectdata);
     const [catagory,setcatagory] = useState(allcatagory);
     const filterbtn=(catagory)=>{
-        if(catagory==='all'){
+        if(catagory==='All'){
             setprojectdetails(projectdata);
             return;
         }
