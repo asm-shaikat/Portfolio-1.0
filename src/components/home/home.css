@@ -1,0 +1,6 @@
+.swiper-slide img {
+    display: block;
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+  }

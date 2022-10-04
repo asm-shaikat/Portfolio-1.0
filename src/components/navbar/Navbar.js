@@ -18,9 +18,6 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
                 <Link to="/projects" >Project</Link>
                 <Link to="/skills">Skills</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/certificates">Certificates</Link>
             </div>
             <div className="menu-btn">
                 <button className='openbtn' onClick={openNav}><AiOutlineMenu/></button>

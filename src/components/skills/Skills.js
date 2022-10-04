@@ -63,6 +63,7 @@ const Skills = () => {
                             <ul>
                                 <li>Ubuntu</li>
                                 <li>Windows</li>
+                                <li>Elementary OS</li>
                             </ul>
                         </Zoom>
                     </div>
