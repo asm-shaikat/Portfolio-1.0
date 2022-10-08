@@ -5,5 +5,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  'fontawesome-svg-core': {
+    'license': 'free'
+  },
+  plugins: ['macros'],
 }
