@@ -3,7 +3,6 @@ import './navbar.css';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [show, setShow] = useState(null);
-    const [profile, setProfile] = useState(false);
 
     return (
         <>

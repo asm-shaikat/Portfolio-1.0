@@ -1,7 +1,6 @@
 import React from 'react';
 import './projects.css';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -11,7 +10,6 @@ import "swiper/css/navigation";
 import "./projects.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
 
 
 const Projectcontiainer = (req) => {
