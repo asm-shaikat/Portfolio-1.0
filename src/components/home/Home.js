@@ -5,7 +5,7 @@ import Navbar from '../navbar/Navbar';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane,faArrowUp } from '@fortawesome/free-solid-svg-icons';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/zoom";
@@ -193,7 +193,10 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            <a href="#" className="float animate-bounce">
+                {/* <i class="fa fa-plus my-float"></i> */}
+                <FontAwesomeIcon icon={faArrowUp} className="fa-2x text-white p-2" />
+            </a>       
 
         </div>
     );
