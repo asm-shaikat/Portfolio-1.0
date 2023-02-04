@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './navbar.css';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [show, setShow] = useState(null);
@@ -32,15 +31,6 @@ const Navbar = () => {
                                 <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white mx-10 tracking-normal transition duration-150 ease-in-out">
                                     <Link to="/projects">Projects</Link>
                                 </li>
-                                <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white mx-10 tracking-normal transition duration-150 ease-in-out">
-                                    <a href="#about">About</a>
-                                </li>
-                                <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white mr-10 tracking-normal transition duration-150 ease-in-out">
-                                   <a href="#certificates">Certificates</a>
-                                </li>
-                                <li  className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white tracking-normal transition duration-150 ease-in-out">
-                                    <a href="#contact">Contact</a>
-                                </li>
                             </ul>
                         </div>
 
@@ -59,29 +49,6 @@ const Navbar = () => {
                                 <li className="flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" onclick="dropdownHandler(this)">
                                     <div className="flex items-center">
                                         <span className="ml-2 font-bold"><Link to="/projects">Projects</Link></span>
-                                    </div>
-                                </li>
-                                <li className="flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" onclick="dropdownHandler(this)">
-                                    <div className="flex items-center">
-                                        <span className="ml-2 font-bold">About</span>
-                                    </div>
-                                </li>
-                                <li className="flex md:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                                    <span className="ml-2 font-bold">Certificates</span>
-                                </li>
-                                <li className="border-b border-gray-300 flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" onclick="dropdownHandler(this)">
-                                    <div className="flex items-center">
-                                        <span className="ml-2 font-bold">Deliverables</span>
-                                    </div>
-                                </li>
-                                <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
-                                    <div className="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" />
-                                            <circle cx={12} cy={7} r={4} />
-                                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                        </svg>
-                                        <span className="ml-2">Profile</span>
                                     </div>
                                 </li>
                             </ul>
@@ -126,7 +93,8 @@ const Navbar = () => {
                                         <div className="mt-6 flex w-full items-center justify-between">
                                             <div className="flex items-center justify-between w-full">
                                                 <div className="flex items-center">
-                                                <Link to="/"><p className="text-base  text-white ml-3">SHAIKAT</p></Link>
+                                                    <Link to="/"><p className="text-base  text-white ml-3">SHAIKAT</p></Link>
+                                    
                                                 </div>
                                                 <div id="cross" className="text-white" onClick={() => setShow(!show)}>
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-x" width={24} height={24} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">

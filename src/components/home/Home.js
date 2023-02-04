@@ -21,6 +21,7 @@ const Home = () => {
 
     return (
         <div className='bg-gradient-to-r from-slate-700 to-slate-900'>
+            
             <Navbar></Navbar>
             <header class="w-full  pt-10">
                 <div class="container px-4 py-16 mx-auto w-full lg:w-4/5">
@@ -156,7 +157,7 @@ const Home = () => {
                                         Message
                                     </label>
 
-                                    <textarea className="bg-slate-700 w-full text-white textarea border-accent" placeholder="Bio"></textarea>
+                                    <textarea className="bg-slate-700 w-full text-white textarea border-accent" placeholder="Enter message"></textarea>
                                 </div>
                                 <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                     <FontAwesomeIcon className='text-yellow-500 fa-2x' icon={faPaperPlane} />

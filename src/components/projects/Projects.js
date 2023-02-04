@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../navbar/Navbar';
+import Unavbar from '../unavbar/Unavbar';
 import projectdata from '../data/projectdata';
 import Projectcontiainer from './Projectcontiainer';
 import Catagory from '../catagory/Catagory';
@@ -19,7 +19,7 @@ const Projects = () => {
     }
     return (
             <>
-                <Navbar></Navbar>
+                <Unavbar></Unavbar>
                 <Catagory catagory={catagory} filterbtn={filterbtn}></Catagory>
                 {
                     projectdetails.map(data =><Projectcontiainer data={data}></Projectcontiainer>)

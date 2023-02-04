@@ -1,14 +1,13 @@
 import React from 'react';
 import './skills.css';
-import '../navbar/Navbar';
+import Unavbar from '../unavbar/Unavbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact,faHtml5,faCss3,faJs,faPython,faPhp,faLaravel,faUbuntu,faLinux,faWindows } from '@fortawesome/free-brands-svg-icons' ;
-import Navbar from '../navbar/Navbar';
 
 const Skills = () => {
     return (
         <div className='bg-gradient-to-r from-slate-700 to-slate-900'>
-            <Navbar></Navbar>
+            <Unavbar></Unavbar>
                 <div className="text-center skill-title border-2 border-purple-800 w-4/5 rounded-md ml-10 mb-5 mt-5 lg:ml-28">
                     <p className='text-white'>SKILLS</p>
                 </div>
