@@ -38,6 +38,9 @@ const Navbar = () => {
                                 <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white mr-10 tracking-normal transition duration-150 ease-in-out">
                                    <a href="#certificates">Certificates</a>
                                 </li>
+                                <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white mr-10 tracking-normal transition duration-150 ease-in-out">
+                                   <a href="/resume">Resume</a>
+                                </li>
                                 <li  className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white tracking-normal transition duration-150 ease-in-out">
                                     <a href="#contact">Contact</a>
                                 </li>
@@ -155,6 +158,12 @@ const Navbar = () => {
                                                 <li className="text-white pt-10">
                                                     <div className="flex items-center">
                                                         <p className="text-white xl:text-base  text-base ml-3"><Link to="/projects">Projects</Link></p>
+                                                    </div>
+                                                </li>
+
+                                                <li className="text-white pt-10">
+                                                    <div className="flex items-center">
+                                                        <p className="text-white xl:text-base  text-base ml-3"><Link to="/resume">Resume</Link></p>
                                                     </div>
                                                 </li>
         

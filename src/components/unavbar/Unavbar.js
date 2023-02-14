@@ -31,6 +31,9 @@ const Navbar = () => {
                                 <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white mx-10 tracking-normal transition duration-150 ease-in-out">
                                     <Link to="/projects">Projects</Link>
                                 </li>
+                                <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-white mx-10 tracking-normal transition duration-150 ease-in-out">
+                                    <Link to="/resume">Resume</Link>
+                                </li>
                             </ul>
                         </div>
 
@@ -49,6 +52,11 @@ const Navbar = () => {
                                 <li className="flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" onclick="dropdownHandler(this)">
                                     <div className="flex items-center">
                                         <span className="ml-2 font-bold"><Link to="/projects">Projects</Link></span>
+                                    </div>
+                                </li>
+                                <li className="flex md:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" onclick="dropdownHandler(this)">
+                                    <div className="flex items-center">
+                                        <span className="ml-2 font-bold"><Link to="/resume">Resume</Link></span>
                                     </div>
                                 </li>
                             </ul>
@@ -123,6 +131,12 @@ const Navbar = () => {
                                                 <li className="text-white pt-10">
                                                     <div className="flex items-center">
                                                         <p className="text-white xl:text-base  text-base ml-3"><Link to="/projects">Projects</Link></p>
+                                                    </div>
+                                                </li>
+
+                                                <li className="text-white pt-10">
+                                                    <div className="flex items-center">
+                                                        <p className="text-white xl:text-base  text-base ml-3"><Link to="/resume">Resume</Link></p>
                                                     </div>
                                                 </li>
         
