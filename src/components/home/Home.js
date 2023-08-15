@@ -18,12 +18,28 @@ import "./home.css";
 import { Zoom, Navigation, Pagination } from "swiper";
 
 const Home = () => {
+    window.addEventListener('scroll',reveal);
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+        for(var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+            if(revealTop < windowHeight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+
+        }
+    }
 
     return (
         <div className='bg-gradient-to-r from-slate-700 to-slate-900'>
             
             <Navbar></Navbar>
-            <header class="w-full  pt-10">
+            <header class="w-full  pt-10 reveal">
                 <div class="container px-4 py-16 mx-auto w-full lg:w-4/5">
                     <div class="items-center lg:flex">
                         <div class="w-full lg:w-1/2">
@@ -51,7 +67,7 @@ const Home = () => {
             </header>
 
             {/* Myself */}
-            <div className="myself w-full mt-20 mb-8" id='about'>
+            <div className="myself w-full mt-20 mb-8 reveal" id='about'>
 
                 <p className='text-center font-sans text-3xl font-extrabold tracking-[.25em] text-yellow-400'>
                     Myself</p>
@@ -67,7 +83,7 @@ const Home = () => {
             </div>
 
             {/* Certificates */}
-            <div className='w-full mb-16' id='certificates'>
+            <div className='w-full mb-16 reveal' id='certificates'>
                 <div className='text-center mb-10'>
                     <p className='text-center text-yellow-400 font-sans text-3xl font-extrabold tracking-[.25em] mb-2'>
                         Certificates</p>
@@ -111,7 +127,7 @@ const Home = () => {
             </div>
 
             {/* Contact */}
-            <section class="min-h-screen  w-full" id='contact'>
+            <section class="min-h-screen  w-full reveal" id='contact'>
                 <div class="container px-6 py-10 mx-auto lg:w-4/5">
                     <div class="lg:flex lg:items-center lg:-mx-10">
                         <div class="lg:w-1/2 lg:mx-10">

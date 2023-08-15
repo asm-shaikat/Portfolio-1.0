@@ -5,13 +5,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact,faHtml5,faCss3,faJs,faPython,faPhp,faLaravel,faUbuntu,faLinux,faWindows } from '@fortawesome/free-brands-svg-icons' ;
 
 const Skills = () => {
+    window.addEventListener('scroll',reveal);
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+        for(var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+            if(revealTop < windowHeight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+
+        }
+    }
     return (
         <div className='bg-gradient-to-r from-slate-700 to-slate-900'>
             <Unavbar></Unavbar>
                 <div className="text-center skill-title border-2 border-purple-800 w-4/5 rounded-md ml-10 mb-5 mt-5 lg:ml-28">
                     <p className='text-white'>SKILLS</p>
                 </div>
-            <div>
+            <div className='reveal'>
                 <div className='p-4'><p className='text-white ml-10  border-b-2 w-20 border-cyan-300 lg:text-2xl'>Frontend</p></div>
                 <div className='w-full'>
                     <div className='grid grid-cols-3 grid-row-3 lg:grid-row-2  lg:grid-cols-4  w-4/5 lg:w-3/5 ml-10 lg:ml-52'>
@@ -25,7 +41,7 @@ const Skills = () => {
                 </div>
             </div>
 
-            <div>
+            <div className='reveal'>
                 <div className='p-4'><p className='text-white ml-10  border-b-2 w-20 border-cyan-300 lg:text-2xl'>Backend</p></div>
                 <div className='w-full '>
                     <div className='grid grid-cols-3 grid-row-3 lg:grid-row-2  lg:grid-cols-4  w-4/5 lg:w-3/5 ml-10 lg:ml-52'>
@@ -38,7 +54,7 @@ const Skills = () => {
                 </div>
             </div>
 
-            <div className=''>
+            <div className='reveal'>
                 <div className='p-4'><p className='text-white ml-10  border-b-2 w-10 border-cyan-300 lg:text-2xl'>OS</p></div>
                 <div className='w-full'>
                     <div className='grid grid-cols-3 grid-row-3 lg:grid-row-2  lg:grid-cols-4  w-4/5 lg:w-3/5 ml-10 pb-10 lg:ml-52'>
