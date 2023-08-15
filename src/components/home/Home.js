@@ -75,7 +75,7 @@ const Home = () => {
                     <div className=''>
                         <img src="images/shaikat.png" className="w-3/5 m-auto xl:w-2/5" alt="" />
                     </div>
-                    <div className=' w-5/5 p-2 ml-4 m-auto lg:-ml-60 p-4'>
+                    <div className=' w-5/5 ml-4 m-auto lg:-ml-60 p-4'>
                         <p className='font-serif text-white'>Hi there, I'm Shaikat, a passionate Full Stack Web Application Developer & Competitive Programmer. I Spend most of my time coding outstanding projects or learning something new. Apart from Web Development I also love machine learning.</p>
                     </div>
                 </div>
@@ -210,7 +210,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <a href="#" className="float animate-bounce">
+            <a href="/" className="float animate-bounce">
                 {/* <i class="fa fa-plus my-float"></i> */}
                 <FontAwesomeIcon icon={faArrowUp} className="fa-2x text-white p-2" />
             </a>       
