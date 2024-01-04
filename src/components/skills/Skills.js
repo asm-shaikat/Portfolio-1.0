@@ -27,7 +27,7 @@ const Skills = () => {
                 <div className="text-center skill-title border-2 border-purple-800 w-4/5 rounded-md ml-10 mb-5 mt-5 lg:ml-28">
                     <p className='text-white'>SKILLS</p>
                 </div>
-            <div className='reveal'>
+            <div>
                 <div className='p-4'><p className='text-white ml-10  border-b-2 w-20 border-cyan-300 lg:text-2xl'>Frontend</p></div>
                 <div className='w-full'>
                     <div className='grid grid-cols-3 grid-row-3 lg:grid-row-2  lg:grid-cols-4  w-4/5 lg:w-3/5 ml-10 lg:ml-52'>
@@ -41,7 +41,7 @@ const Skills = () => {
                 </div>
             </div>
 
-            <div className='reveal'>
+            <div>
                 <div className='p-4'><p className='text-white ml-10  border-b-2 w-20 border-cyan-300 lg:text-2xl'>Backend</p></div>
                 <div className='w-full '>
                     <div className='grid grid-cols-3 grid-row-3 lg:grid-row-2  lg:grid-cols-4  w-4/5 lg:w-3/5 ml-10 lg:ml-52'>
@@ -54,7 +54,7 @@ const Skills = () => {
                 </div>
             </div>
 
-            <div className='reveal'>
+            <div>
                 <div className='p-4'><p className='text-white ml-10  border-b-2 w-10 border-cyan-300 lg:text-2xl'>OS</p></div>
                 <div className='w-full'>
                     <div className='grid grid-cols-3 grid-row-3 lg:grid-row-2  lg:grid-cols-4  w-4/5 lg:w-3/5 ml-10 pb-10 lg:ml-52'>

@@ -15,7 +15,7 @@ import "./projects.css";
 const Projectcontiainer = (req) => {
     const { title, technology, image, altName, description,link,live } = req.data;
     return (
-        <div className='project-card grid place-items-center mb-4 bg-gradient-to-r from-slate-700 to-slate-900'>
+        <div className='project-card grid place-items-center mb-4   '>
             <div className="child flex text-white">
                 <p className='text-sm lg:p-2 p-1 m-1 lg:m-2 border-b-2 lg:border-b-2 border-b-yellow-600  lg:text-xl'>{title}</p>
                 <p className='p-1 m-1 border-b-2 border-b-yellow-600 text-sm lg:text-xl'>{technology}</p>
